@@ -17,11 +17,19 @@ body {
     flex-direction: column;
     background-color: aliceblue;
     flex: 1;
-    font-size: 1rem;
+    font-size: 50px;
+}
+
+.intro-container {
+    display: flex;
+    flex: 1;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 .intro-text {
     flex: 1;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
