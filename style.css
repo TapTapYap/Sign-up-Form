@@ -43,7 +43,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
 }
 
 .sign-up {
@@ -52,15 +52,28 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center;
-    align-items: center;
+    align-items:flex-start;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sign-up > h1 {
+    font-size: 1rem;
+}
+
+form
+
+form > label {
+    font-size: .7em;
 }
 
 .submit {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #createAccount {
