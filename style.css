@@ -25,7 +25,7 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: rgba(133, 167, 102, 0.185);
     flex: 1;
     font-size: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -64,10 +64,20 @@ body {
 form {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1000px;
 }
 
-form > label {
-    font-size: .7em;
+form > label, input {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
 
 .submit {
@@ -81,7 +91,7 @@ form > label {
 }
 
 #createAccount {
-    background-color: forestgreen;
+    background-color: rgb(15, 77, 15);
     color: white;
     font-size: large;
     border-radius: 10px;
