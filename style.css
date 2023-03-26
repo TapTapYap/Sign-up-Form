@@ -73,7 +73,7 @@ form > label, input {
 }
 
 input {
-  width: 200px;
+  width: 300px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -104,4 +104,8 @@ input {
 
 button:focus, button:hover {
     opacity: .7;
+}
+
+input:invalid {
+    border: 2px red solid;
 }

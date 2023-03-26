@@ -36,14 +36,14 @@
                 <label for="user_email">Email Address:</label>
                 <input type="email" id="user_email" name="email" placeholder="you@example.com">
 
-                <label for="tel_number">Number:</label>
+                <label for="tel_number">Phone Number:</label>
                 <input type="tel" name="tel_number" id="tel_number" placeholder="888-888-8888" maxlength="10">
 
                 <label for="user_password">Password:</label>
-                <input type="password" name="password" id="user_password">
+                <input type="password" name="password" id="user_password" onkeyup='check()'>
 
-                <label for="user_password">Confirm Password:</label>
-                <input type="password" name="password" id="user_password">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="password" id="confirm_password" onkeyup='check()'>
             </form>
         </div>
         <div class="submit">
@@ -51,5 +51,18 @@
             <p>Already have an account? <a href="http://theodinproject.com">Log in</a></p>
         </div>
     </div>
+
+    <script>
+        var check = function() {
+            if (document.getElementById('user_password').value == document.getElementById('confirm_password').value) {
+                document.getElementById('user_password').style.border = 'green 2px solid';
+                document.getElementById('confirm_password').style.border = 'green 2px solid';
+            } else {
+                document.getElementById('user_password').style.border = 'red 2px solid';
+                document.getElementById('confirm_password').style.border = 'red 2px solid';
+                document.getElementById('message').innerHTML = 'not matching';
+            }
+        }
+    </script>
 </body>
 </html>
