@@ -28,22 +28,22 @@
             <h1>Let's do this!</h1>
             <form action="" method="post">
                 <label for="first_name">First Name:</label>
-                <input type="text" name="first_name" id="first_name" name="first_name" placeholder="John...">
+                <input type="text" name="first_name" id="first_name" name="first_name" placeholder="John..." required>
 
                 <label for="last_name">Last Name:</label>
-                <input type="text" name="last_name" id="last_name" name="last_name" placeholder="Wick...">
+                <input type="text" name="last_name" id="last_name" name="last_name" placeholder="Wick..." required>
 
                 <label for="user_email">Email Address:</label>
-                <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
 
                 <label for="tel_number">Phone Number:</label>
-                <input type="tel" name="tel_number" id="tel_number" placeholder="888-888-8888" maxlength="10">
+                <input type="tel" name="tel_number" id="tel_number" placeholder="888-888-8888" minlength="10" maxlength="10" required>
 
                 <label for="user_password">Password:</label>
-                <input type="password" name="password" id="user_password" onkeyup='check()'>
+                <input type="password" name="password" id="user_password" onkeyup='check()' required>
 
                 <label for="confirm_password">Confirm Password:</label>
-                <input type="password" name="password" id="confirm_password" onkeyup='check()'>
+                <input type="password" name="password" id="confirm_password" onkeyup='check()' required>
             </form>
         </div>
         <div class="submit">
