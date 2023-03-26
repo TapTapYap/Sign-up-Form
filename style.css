@@ -34,6 +34,7 @@ body {
 .intro-container {
     display: flex;
     flex: 1;
+    width: 1000px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -57,8 +58,16 @@ body {
     padding-right: 100px;
 }
 
-.sign-up > h1 {
-    font-size: 2rem;
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px;
+    width: 1000px;
+}
+
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
 }
 
 form {
@@ -70,6 +79,10 @@ form {
 form > label, input {
     font-family: inherit;
     font-size: 100%;
+}
+
+label {
+    display: block;
 }
 
 input {
