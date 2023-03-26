@@ -50,10 +50,6 @@ body {
 .sign-up {
     background-color: white;
     border: 2px black solid;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items:flex-start;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -62,7 +58,10 @@ fieldset {
     margin: 2em 0;
     padding: 1em 2em;
     border: solid 1px;
-    width: 1000px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
 }
 
 legend {
@@ -71,8 +70,6 @@ legend {
 }
 
 form {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 1000px;
 }
 
@@ -83,14 +80,19 @@ form > label, input {
 
 label {
     display: block;
+    margin-top: 1em;
+}
+
+label:first-of-type {
+    margin-top: 0;
 }
 
 input {
-  width: 300px;
-  padding: 0;
+  width: 450px;
+  padding: .3em;
   margin: 0;
+  margin-right: 20px;
   box-sizing: border-box;
-  
 }
 
 .submit {
