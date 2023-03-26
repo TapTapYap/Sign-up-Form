@@ -106,6 +106,10 @@ button:focus, button:hover {
     opacity: .7;
 }
 
+input:focus, input:hover {
+    border: 2px solid black;
+}
+
 input:invalid {
     border: 2px red solid;
 }
